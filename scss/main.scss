@@ -23,8 +23,9 @@ a {
   transition: all 0.5s ease-in-out;
 
   &:hover {
-    border-bottom: 2px solid var.$primary-col-10;
     padding-bottom: rem(8);
+    border-bottom: 0;
+    border-bottom: 2px solid var.$primary-col-10;
   }
 }
 
