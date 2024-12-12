@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-size: 15px;
+  font-family: "Alata", "Josefin Sans", sans-serif;
+}
+
+.inactive {
+  display: none !important;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.5s ease-in-out;
+}
+a:hover {
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-family: "Josefin sans", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 32px;
+  color: hsl(0, 0%, 0%);
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+@keyframes btnSc {
+  0% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+header {
+  display: flex;
+  height: 100vh;
+  background-image: url("/images/mobile/image-hero.jpg");
+  background-size: cover;
+}
+header nav {
+  padding: 0 1.5rem;
+  padding-top: 2.5rem;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+header nav .nav__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header nav .nav__main #nav__logo {
+  width: 9rem;
+}
+header nav .nav__main #nav__logo img {
+  width: 100%;
+}
+header nav .nav__main #nav__btn button {
+  height: 1rem;
+  width: 0.875rem;
+  background: none;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-size: 1.25rem;
+  animation: btnSc 0.5s ease-in;
+}
+header nav .nav__menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header nav .nav__menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Josefin sans", sans-serif;
+  text-transform: uppercase;
+}
+header nav .nav__menu ul li a {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+header > div {
+  align-self: center;
+  padding: 1.5rem;
+  border: solid 2px hsl(0, 0%, 100%);
+  margin: 0 1.5rem;
+  height: fit-content;
+  max-width: 20.4375rem;
+}
+header > div p {
+  display: block;
+  font-size: 2.5rem;
+  line-height: 2.375rem;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+
+.nav__active {
+  width: 100%;
+  height: 100vh;
+  background: hsl(0, 0%, 0%);
+  padding-bottom: 5.25rem;
+}
+
+#intro {
+  margin: 6rem 1.5rem;
+}
+#intro > div {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+#intro > div img {
+  width: 100%;
+}
+#intro article {
+  text-align: center;
+  margin: 0 1.5rem;
+}
+#intro article p {
+  font-family: "Alata", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 41%);
+}
+
+#creations {
+  text-align: center;
+  margin: 0 1.5rem;
+  margin-bottom: 6rem !important;
+}
+#creations h2 {
+  margin-bottom: 3rem;
+}
+#creations .creation-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2.125rem;
+}
+#creations .creation-container .creation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  padding-top: 3.25rem;
+  background-size: cover;
+}
+#creations .creation-container .creation h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "Josefin sans", sans-serif;
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+}
+#creations .creation-container .creation--1 {
+  background-image: url("/images/mobile/image-deep-earth.jpg");
+}
+#creations .creation-container .creation--2 {
+  background-image: url("/images/mobile/image-night-arcade.jpg");
+}
+#creations .creation-container .creation--3 {
+  background-image: url("/images/mobile/image-soccer-team.jpg");
+}
+#creations .creation-container .creation--4 {
+  background-image: url("/images/mobile/image-grid.jpg");
+}
+#creations .creation-container .creation--5 {
+  background-image: url("/images/mobile/image-from-above.jpg");
+}
+#creations .creation-container .creation--6 {
+  background-image: url("/images/mobile/image-pocket-borealis.jpg");
+}
+#creations .creation-container .creation--7 {
+  background-image: url("/images/mobile/image-curiosity.jpg");
+}
+#creations .creation-container .creation--8 {
+  background-image: url("/images/mobile/image-fisheye.jpg");
+}
+#creations button {
+  padding: 0.8125rem 2.6875rem;
+  background: none;
+  border: solid hsl(0, 0%, 0%) 0.0625rem;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.3125rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+}
+#creations button:hover {
+  background: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  background: hsl(0, 0%, 0%);
+  padding: 3.5rem 3.1875rem;
+  text-align: center;
+}
+footer > div {
+  border-bottom: solid hsl(0, 0%, 41%) 1px;
+  padding-bottom: 1rem;
+}
+footer .footer-img {
+  width: 9rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+footer .footer-img img {
+  width: 100%;
+}
+footer ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 3rem;
+}
+footer ul li {
+  font-family: "Alata", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+footer .socials {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+footer p {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  color: hsl(0, 0%, 41%);
+}
+footer .attribution {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  color: hsl(0, 0%, 41%);
+  padding-top: 1rem;
+}
+footer .attribution a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+footer .attribution a:link {
+  color: hsl(0, 0%, 100%);
+}
+footer .attribution a:visited {
+  color: hsl(0, 0%, 41%);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-image: url("/images/mobile/image-hero.jpg") !important;
+    background-position: top;
+  }
+  header > div {
+    max-width: 40.625rem !important;
+  }
+  header > div p {
+    display: block;
+    font-size: 4.5rem;
+    line-height: 4.375rem;
+    font-family: "Josefin sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+  }
+}
+@media screen and (min-width: 866px) {
+  #nav__btn {
+    display: none;
+  }
+  header {
+    background-image: url("/images/desktop/image-hero.jpg") !important;
+    background-position: top;
+  }
+  header > div {
+    max-width: 40.625rem;
+  }
+  header > div p {
+    display: block;
+    font-size: 4.5rem;
+    line-height: 4.375rem;
+    font-family: "Josefin sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  nav #nav__logo {
+    width: 12rem !important;
+  }
+  nav .nav__main {
+    display: inline;
+    width: fit-content;
+  }
+  nav .nav__menu {
+    display: flex !important;
+  }
+  nav .nav__menu ul {
+    display: flex;
+    flex-direction: row !important;
+  }
+  nav .nav__menu ul li a {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    font-weight: 400;
+    font-family: "Alata", sans-serif;
+    text-transform: capitalize;
+  }
+  #creations {
+    text-align: left;
+    margin: 0 10.125rem;
+    position: relative;
+    margin-bottom: 11.5rem;
+  }
+  #creations .creation {
+    width: 16rem !important;
+    height: 28.125rem !important;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+  }
+  #creations .creation:hover {
+    opacity: 0.25;
+    cursor: pointer;
+  }
+  #creations .creation h3 {
+    position: absolute;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Josefin sans", sans-serif;
+    text-align: left;
+    color: hsl(0, 0%, 100%);
+    bottom: 2rem;
+    left: 2.5rem;
+  }
+  #creations .creation--1 {
+    background: url("/images/desktop/image-deep-earth.jpg") !important;
+  }
+  #creations .creation--2 {
+    background: url("/images/desktop/image-night-arcade.jpg") !important;
+  }
+  #creations .creation--3 {
+    background: url("/images/desktop/image-soccer-team.jpg") !important;
+  }
+  #creations .creation--4 {
+    background: url("/images/desktop/image-grid.jpg") !important;
+  }
+  #creations .creation--5 {
+    background: url("/images/desktop/image-from-above.jpg") !important;
+  }
+  #creations .creation--6 {
+    background: url("/images/desktop/image-pocket-borealis.jpg") !important;
+  }
+  #creations .creation--7 {
+    background: url("/images/desktop/image-curiosity.jpg") !important;
+  }
+  #creations .creation--8 {
+    background: url("/images/desktop/image-fisheye.jpg") !important;
+  }
+  #creations button {
+    position: absolute;
+    right: 0;
+    top: 0.125rem;
+  }
+  footer {
+    padding: 2.75rem 10.3125rem;
+    padding-bottom: 2.0625rem;
+  }
+  footer > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+  footer > div ul {
+    display: flex;
+    margin: 0;
+  }
+  footer > div > div:first-child .footer-img {
+    margin: 0;
+    margin-bottom: 0.875rem;
+  }
+  footer > div > div:last-child .socials {
+    margin: 0;
+    justify-self: right;
+    margin-bottom: 0.875rem;
+  }
+}
+@media screen and (min-width: 1152px) {
+  nav {
+    padding: 0 10.3125rem !important;
+    padding-top: 4rem !important;
+  }
+  header > div {
+    position: absolute;
+    bottom: 9.125rem;
+    left: 10.3125rem;
+  }
+  #intro {
+    margin: 10rem 10.3125rem;
+    margin-bottom: 11.5rem;
+    display: flex;
+    position: relative;
+    max-height: 31.25rem;
+  }
+  #intro > div {
+    width: 65.8%;
+  }
+  #intro > div img {
+    max-height: 31.25rem;
+  }
+  #intro article {
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    z-index: 5;
+    width: 48.7%;
+    padding: 6rem;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
