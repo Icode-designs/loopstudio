@@ -1,0 +1,15 @@
+{
+  "name": "loopstudio",
+  "version": "1.0.0",
+  "description": "loopstudio landing page",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w scss:css --no-source-map"
+  },
+  "author": "Bonaventure😌",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}
